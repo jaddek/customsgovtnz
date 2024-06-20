@@ -1,4 +1,4 @@
-module jaddek.com/jaddek/nzcustomsgov
+module jaddek.com/jaddek/customsgovtnz-rates
 
 go 1.22.4
 

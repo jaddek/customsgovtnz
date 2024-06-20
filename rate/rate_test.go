@@ -34,9 +34,9 @@ func TestGetNzCustomsRates(t *testing.T) {
 	}))
 	defer svr.Close()
 
-	httpClient := MakeNZCustomsGovHttpClient(svr.URL)
+	httpClient := MakeCustomsGovtNZHttpClient(svr.URL)
 
-	content := string(GetNzCustomsRates(httpClient))
+	content := string(GetCustomsGovtNZRates(httpClient))
 
 	assert.Equal(t, content, expected)
 }

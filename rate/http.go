@@ -3,22 +3,22 @@ package rate
 import "net/http"
 
 const (
-	NZCUSTOMSGOV_URL        = "https://www.customs.govt.nz/"
-	NZCUSTOMSGOV_RATES_PATH = "/api/datafiles/current-exchange"
+	CUSTOMSGOVTNZ_URL        = "https://www.customs.govt.nz/"
+	CUSTOMSGOVTNZ_RATES_PATH = "/api/datafiles/current-exchange"
 )
 
-type INZCustomsGovHttpClient interface {
+type ICustomsGovtNZHttpClient interface {
 	GetRates() (*http.Response, error)
 }
 
-type NZCustomsGovHttpClient struct {
+type CustomsGovtNZHttpClient struct {
 	HOST string
 }
 
-func MakeNZCustomsGovHttpClient(host string) *NZCustomsGovHttpClient {
-	return &NZCustomsGovHttpClient{HOST: host}
+func MakeCustomsGovtNZHttpClient(host string) *CustomsGovtNZHttpClient {
+	return &CustomsGovtNZHttpClient{HOST: host}
 }
 
-func (c *NZCustomsGovHttpClient) GetRates() (*http.Response, error) {
-	return http.DefaultClient.Get(c.HOST + NZCUSTOMSGOV_RATES_PATH)
+func (c *CustomsGovtNZHttpClient) GetRates() (*http.Response, error) {
+	return http.DefaultClient.Get(c.HOST + CUSTOMSGOVTNZ_RATES_PATH)
 }

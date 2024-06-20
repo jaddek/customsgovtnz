@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"jaddek.com/jaddek/nzcustomsgov/rate"
+	"jaddek.com/jaddek/customsgovtnz/rate"
 )
 
 func main() {
-	httpClient := rate.MakeNZCustomsGovHttpClient(rate.NZCUSTOMSGOV_URL)
-	body := rate.GetNzCustomsRates(httpClient)
+	httpClient := rate.MakeCustomsGovtNZHttpClient(rate.CUSTOMSGOVTNZ_URL)
+	body := rate.GetCustomsGovtNZRates(httpClient)
 	envelope := rate.MakeExchangeRateList(body)
 
 	fmt.Println(string(envelope.GetEnvelopeAsJson()))

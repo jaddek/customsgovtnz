@@ -100,7 +100,7 @@ func asJson(o interface{}) []byte {
 	return result
 }
 
-func GetNzCustomsRates(httpClient INZCustomsGovHttpClient) []byte {
+func GetCustomsGovtNZRates(httpClient *CustomsGovtNZHttpClient) []byte {
 	resp, err := httpClient.GetRates()
 
 	if err != nil {
