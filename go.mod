@@ -1,4 +1,4 @@
-module github.com/jaddek/customsgovtnz-rates
+module github.com/jaddek/customsgovtnz
 
 go 1.22.4
 

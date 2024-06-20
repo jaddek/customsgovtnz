@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"jaddek.com/jaddek/customsgovtnz/rate"
+	"github.com/jaddek/customsgovtnz/rate"
 )
 
 func main() {
