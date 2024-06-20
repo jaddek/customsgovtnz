@@ -1,4 +1,4 @@
-# ECB rates 
+# Customs Govt NZ rates 
 
 Exchange rates in Customs Govt NZ
 
