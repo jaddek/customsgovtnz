@@ -1,1 +1,8 @@
-Parsing url: https://www.customs.govt.nz/business/import/customs-exchange-rates/
+# ECB rates 
+
+Exchange rates in Customs Govt NZ
+
+```go
+	NZCUSTOMSGOV_URL        = "https://www.customs.govt.nz"
+	NZCUSTOMSGOV_RATES_PATH = "/business/import/customs-exchange-rates/"
+```
